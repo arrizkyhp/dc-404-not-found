@@ -39,7 +39,8 @@ main {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  height: 100%;
+  padding-top: 150px;
+  /* height: 100%; */
 }
 
 main img {
@@ -132,6 +133,23 @@ footer .attribution a:hover {
   }
 }
 
+@media screen and (max-width: 640px) {
+  html,
+  body {
+    margin: 0 1.5rem;
+  }
+
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 140px;
+    margin-bottom: 70px;
+  }
+
+  footer .attribution {
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 400px) {
   html,
   body {
@@ -162,9 +180,5 @@ footer .attribution a:hover {
   main .not-found-text p {
     font-size: 18px;
     line-height: 26.66px;
-  }
-
-  footer .attribution {
-    position: relative;
   }
 }
