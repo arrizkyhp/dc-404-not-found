@@ -111,6 +111,27 @@ footer .attribution a:hover {
   color: var(--gray-2);
 }
 
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    margin: 0 1.5rem;
+  }
+
+  main {
+    gap: 20px;
+  }
+
+  main .not-found-text h1 {
+    font-size: 43px;
+    margin-bottom: 30px;
+  }
+
+  main .not-found-text p {
+    font-size: 18px;
+    line-height: 26.66px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   html,
   body {
